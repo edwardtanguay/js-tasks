@@ -1,11 +1,21 @@
-export function getEmployeeList(emps, country = '/all/') {
+export function getEmployeeList(emps, country = '/all/', kind = 'text') {
 	let r = '';
 	r += `There are ${emps.length} employees:\n\n`;
+	if (kind == 'html') {
+		r += '<ul>';
+	}
 	for (const emp of emps) {
 		if (country === '/all/' || emp.address.country === country) {
 			const birthday = emp.birthDate.substr(0, 10);
-			r += `${emp.firstName} ${emp.lastName} - ${emp.address.country} - ${birthday}\n`;
+			if (kind === 'text') {
+				r += `${emp.firstName} ${emp.lastName} - ${emp.address.country} - ${birthday}\n`;
+			} else {
+				r += `<li>${emp.firstName} ${emp.lastName} - ${emp.address.country} - ${birthday}</li>`;
+			}
 		}
+	}
+	if (kind == 'html') {
+		r += '</ul>';
 	}
 	return r;
 }

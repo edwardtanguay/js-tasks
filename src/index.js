@@ -10,3 +10,4 @@ fs.writeFileSync('src/output/employeeList.txt', employeeList);
 fs.writeFileSync('src/output/employeeListUk.txt', employeeListUk);
 fs.writeFileSync('src/output/employeeListUsa.txt', employeeListUsa);
 
+fs.writeFileSync('public/index.html', getEmployeeList(employees, 'USA', 'html'));
