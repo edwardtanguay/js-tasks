@@ -9,5 +9,9 @@ fs.writeFileSync("src/output/employeeList.txt", employeeList);
 function getEmployeeList(emps) {
 	let r = '';
 	r += `There are ${emps.length} employees:`;
+	for (const emp of emps) {
+		console.log(emp.firstName);
+	}
+
 	return r;
 }

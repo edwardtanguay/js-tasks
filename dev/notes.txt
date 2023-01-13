@@ -1,6 +1,14 @@
 - x create /src directory
 - x create start script
 - .. create a file that has a list
+	- first name, last name
+	- country
+	- birthdate
+- filter by country
+- filter by age
+- sort by last name
+
+
 
 - create getTeam1()
 - create getTeam2()
