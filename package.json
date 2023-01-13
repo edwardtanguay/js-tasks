@@ -1,0 +1,20 @@
+{
+  "name": "js-tasks",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "test1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edwardtanguay/js-tasks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edwardtanguay/js-tasks/issues"
+  },
+  "homepage": "https://github.com/edwardtanguay/js-tasks#readme"
+}

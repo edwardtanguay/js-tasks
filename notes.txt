@@ -1,0 +1,5 @@
+- create a file that has a list
+
+- create getTeam1()
+- create getTeam2()
+- 

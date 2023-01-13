@@ -1,15 +1,4 @@
-const employees = getEmployees();
-const employeeList = getEmployeeList(employees);
-
-console.log(employeeList);
-
-function getEmployeeList(emps) {
-	let r = '';
-	r += `There are ${emps.length} employees:`;
-	return r;
-}
-
-function getEmployees() {
+export function getEmployees() {
 	return [
 		{
 			employeeID: 2,
