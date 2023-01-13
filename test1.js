@@ -1,6 +1,11 @@
 const employees = getEmployees();
 
 console.log(`There are ${employees.length} employees:`);
+console.log(getEmployeeList());
+
+function getEmployeeList() {
+	return 'list';
+}
 
 function getEmployees() {
 	return [
