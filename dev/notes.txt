@@ -1,11 +1,12 @@
 - x create /src directory
 - x create start script
 - .. create a file that has a list
-	- first name, last name
-	- country
-	- birthdate
-- filter by country
-- filter by age
+	- x first name, last name
+	- x country
+	- .. birthdate
+- filter
+	- by country
+	- by birthdate 
 - sort by last name
 
 
