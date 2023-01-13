@@ -1,0 +1,6 @@
+There are 9 employees:
+
+Steven Buchanan - UK - 1955-03-04
+Michael Suyama - UK - 1963-07-02
+Robert King - UK - 1960-05-29
+Anne Dodsworth - UK - 1966-01-27

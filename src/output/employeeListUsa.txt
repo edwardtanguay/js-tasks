@@ -1,0 +1,7 @@
+There are 9 employees:
+
+Andrew Fuller - USA - 1952-02-19
+Nancy Davolio - USA - 1948-12-08
+Janet Leverling - USA - 1963-08-30
+Margaret Peacock - USA - 1937-09-19
+Laura Callahan - USA - 1958-01-09

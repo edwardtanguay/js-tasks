@@ -3,13 +3,13 @@
 - .. create a file that has a list
 	- x first name, last name
 	- x country
-	- .. birthdate
-- filter
-	- by country
+	- x birthdate
+- .. filter
+	- .. by country
 	- by birthdate 
 - sort by last name
 
-
+- create HTML page
 
 - create getTeam1()
 - create getTeam2()

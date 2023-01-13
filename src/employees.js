@@ -1,3 +1,25 @@
+export function getEmployeeList(emps, country = '/all/') {
+	let r = '';
+	r += `There are ${emps.length} employees:\n\n`;
+	for (const emp of emps) {
+		if (country === '/all/' || emp.address.country === country) {
+			const birthday = emp.birthDate.substr(0, 10);
+			r += `${emp.firstName} ${emp.lastName} - ${emp.address.country} - ${birthday}\n`;
+		}
+	}
+	return r;
+}
+
+export function getEmployeeList2(emps) {
+	let r = '';
+	r += `There are ${emps.length} employees:\n\n`;
+	for (let i = 0; i < emps.length - 1; i++) {
+		const emp = emps[i];
+		r += `${emp.firstName} ${emp.lastName}\n`;
+	}
+	return r;
+}
+
 export function getEmployees() {
 	return [
 		{

@@ -1,27 +1,12 @@
 import fs from 'fs';
-import { getEmployees } from './employees.js';
+import { getEmployees, getEmployeeList } from './employees.js';
 
 const employees = getEmployees();
 const employeeList = getEmployeeList(employees);
+const employeeListUk = getEmployeeList(employees, 'UK');
+const employeeListUsa = getEmployeeList(employees, 'USA');
 
 fs.writeFileSync('src/output/employeeList.txt', employeeList);
+fs.writeFileSync('src/output/employeeListUk.txt', employeeListUk);
+fs.writeFileSync('src/output/employeeListUsa.txt', employeeListUsa);
 
-function getEmployeeList(emps) {
-	let r = '';
-	r += `There are ${emps.length} employees:\n\n`;
-	for (const emp of emps) {
-		const birthday = emp.birthDate.substr(0, 10);
-		r += `${emp.firstName} ${emp.lastName} - ${emp.address.country} - ${birthday}\n`;
-	}
-	return r;
-}
-
-function getEmployeeList2(emps) {
-	let r = '';
-	r += `There are ${emps.length} employees:\n\n`;
-	for (let i = 0; i < emps.length - 1; i++) {
-		const emp = emps[i];
-		r += `${emp.firstName} ${emp.lastName}\n`;
-	}
-	return r;
-}
