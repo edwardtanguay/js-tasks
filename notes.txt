@@ -1,5 +1,12 @@
+- x create /src directory
+- .. create start script
 - create a file that has a list
 
 - create getTeam1()
 - create getTeam2()
-- 
+
+- go through process of setting up npm javascript application again
+
+- look at Ali's npm packages, bugs, etc.
+	- https://www.npmjs.com/package/rnid
+	- https://www.npmjs.com/package/xck

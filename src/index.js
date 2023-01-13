@@ -1,5 +1,5 @@
 import fs from 'fs';
-import { getEmployees } from './employees.js';
+import { getEmployees } from '../employees.js';
 
 const employees = getEmployees();
 const employeeList = getEmployeeList(employees);
