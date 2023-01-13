@@ -1,10 +1,12 @@
 const employees = getEmployees();
+const employeeList = getEmployeeList(employees);
 
-console.log(`There are ${employees.length} employees:`);
-console.log(getEmployeeList());
+console.log(employeeList);
 
-function getEmployeeList() {
-	return 'list';
+function getEmployeeList(emps) {
+	let r = '';
+	r += `There are ${emps.length} employees:`;
+	return r;
 }
 
 function getEmployees() {
