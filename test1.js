@@ -1,6 +1,6 @@
 const employees = getEmployees();
 
-console.log(employees.length);
+console.log(`There are ${employees.length} employees:`);
 
 function getEmployees() {
 	return [
