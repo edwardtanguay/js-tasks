@@ -1,10 +1,10 @@
 import fs from 'fs';
-import { getEmployees } from '../employees.js';
+import { getEmployees } from './employees.js';
 
 const employees = getEmployees();
 const employeeList = getEmployeeList(employees);
 
-fs.writeFileSync("employeeList.txt", employeeList);
+fs.writeFileSync("src/output/employeeList.txt", employeeList);
 
 function getEmployeeList(emps) {
 	let r = '';

@@ -1,6 +1,6 @@
 - x create /src directory
-- .. create start script
-- create a file that has a list
+- x create start script
+- .. create a file that has a list
 
 - create getTeam1()
 - create getTeam2()
